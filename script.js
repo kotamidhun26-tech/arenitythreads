@@ -271,7 +271,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const addBrandingWatermark = () => {
         const watermark = document.createElement('div');
         watermark.className = 'branding-watermark';
-        watermark.innerHTML = '<img src="ARenity_Threads_DP_UHD.png" alt="ARenity Threads">';
+        watermark.innerHTML = '<img src="photo.jpg" alt="ARenity Threads">';
         document.body.appendChild(watermark);
     };
 });
