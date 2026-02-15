@@ -215,6 +215,58 @@ body {
     animation: scaleIn 1s ease-out 0.3s both;
 }
 
+/* Profile photo (big centered logo) and caption */
+.hero-profile-photo {
+    width: 320px;
+    max-width: 46vw;
+    height: auto;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.25);
+    border: 6px solid rgba(255, 255, 255, 0.9);
+    transition: transform 0.35s ease, box-shadow 0.35s ease;
+    animation: scaleIn 1s ease-out 0.2s both, float 4s ease-in-out infinite 2s;
+}
+
+.hero-profile-photo:hover {
+    transform: translateY(-6px) scale(1.02);
+}
+
+.hero-caption {
+    margin-top: 1rem;
+    font-family: 'Playfair Display', serif;
+    font-size: 1.15rem;
+    color: var(--text-dark);
+    font-weight: 600;
+    text-align: center;
+    line-height: 1.25;
+}
+
+/* Highlighted name styling */
+.highlight-name {
+    display: inline-block;
+    font-family: 'Playfair Display', serif;
+    font-weight: 800;
+    font-size: 1.4rem;
+    color: var(--dark-green);
+    text-shadow: 0 2px 6px rgba(0,0,0,0.08);
+    padding: 4px 8px;
+    border-radius: 6px;
+    background: linear-gradient(90deg, rgba(91,142,125,0.06), rgba(201,169,97,0.04));
+    transition: transform 0.22s ease, box-shadow 0.22s ease;
+}
+
+.highlight-name:hover {
+    transform: translateY(-4px) scale(1.03);
+    box-shadow: 0 10px 30px rgba(91,142,125,0.12);
+}
+
+@media (max-width: 480px) {
+    .highlight-name { font-size: 1.15rem; }
+}
+
 .hero-logo:hover {
     transform: scale(1.05);
 }
@@ -775,6 +827,9 @@ body {
     .hero-logo {
         max-width: 220px;
     }
+    .hero-profile-photo {
+        max-width: 260px;
+    }
     
     .hero-title {
         font-size: 2.5rem;
@@ -840,6 +895,9 @@ body {
     .hero-logo {
         max-width: 180px;
         margin-bottom: 1.5rem;
+    }
+    .hero-profile-photo {
+        max-width: 200px;
     }
     
     .hero-title {
