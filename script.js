@@ -235,36 +235,21 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Add entrance animation to hero elements
     const heroLogo = document.querySelector('.hero-logo');
-    const heroTitle = document.querySelector('.hero-title');
-    const heroSubtitle = document.querySelector('.hero-subtitle');
-    const heroDescription = document.querySelector('.hero-description');
+    const heroProfilePhoto = document.querySelector('.hero-profile-photo');
+    const heroCaption = document.querySelector('.hero-caption');
 
-    if (heroLogo) {
+    if (heroProfilePhoto) {
         setTimeout(() => {
-            heroLogo.style.opacity = '1';
-            heroLogo.style.transform = 'scale(1)';
+            heroProfilePhoto.style.opacity = '1';
+            heroProfilePhoto.style.transform = 'scale(1)';
         }, 300);
     }
 
-    if (heroTitle) {
+    if (heroCaption) {
         setTimeout(() => {
-            heroTitle.style.opacity = '1';
-            heroTitle.style.transform = 'translateY(0)';
+            heroCaption.style.opacity = '1';
+            heroCaption.style.transform = 'translateY(0)';
         }, 500);
-    }
-
-    if (heroSubtitle) {
-        setTimeout(() => {
-            heroSubtitle.style.opacity = '1';
-            heroSubtitle.style.transform = 'translateY(0)';
-        }, 700);
-    }
-
-    if (heroDescription) {
-        setTimeout(() => {
-            heroDescription.style.opacity = '1';
-            heroDescription.style.transform = 'translateY(0)';
-        }, 900);
     }
     
     // Add branding watermark effect on scroll
